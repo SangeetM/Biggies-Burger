@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.android.BiggiesBurger.place_order">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="ORDER"
+                android:textSize="40sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="85dp"/>
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="50dp"
+                android:onClick="home"
+                android:background="@drawable/home_button"
+                />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:id="@+id/burger"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:clickable="true"
+                        android:onClick="burger"
+                        android:textSize="30sp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginLeft="80dp"
+                        android:text="PLATTERs" />
+
+                    <LinearLayout
+                        android:id="@+id/platters"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginTop="10dp">
+
+                            <CheckBox
+                                android:id="@+id/platters1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="CHEESY STRIPEs"
+                                android:textSize="20dp"
+                                android:paddingLeft="10dp"
+
+                                />
+
+                            <CheckBox
+                                android:id="@+id/platters2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="JALAPENO STRIPEs"
+                                android:paddingLeft="10dp"
+                                android:textSize="20dp"
+                                android:layout_marginTop="12dp"
+
+                                />
+
+                            <CheckBox
+                                android:id="@+id/platters3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="CHEESE BALLs"
+                                android:textSize="20dp"
+                                android:paddingLeft="10dp"
+                                android:layout_marginTop="12dp"
+
+                                />
+
+                            <CheckBox
+                                android:id="@+id/platters4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="CHICKEN NUGGETs"
+                                android:textSize="20dp"
+                                android:paddingLeft="10dp"
+                                android:layout_marginTop="12dp"
+
+                                />
+                            <CheckBox
+                                android:id="@+id/platters5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="CHEESE NUGGETS"
+                                android:textSize="20dp"
+                                android:paddingLeft="10dp"
+                                android:layout_marginTop="12dp"
+
+                                />
+                            <CheckBox
+                                android:id="@+id/platters6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="VEG FINGER STICKER"
+                                android:textSize="20dp"
+                                android:paddingLeft="10dp"
+                                android:layout_marginTop="12dp"
+
+                                />
+                            <CheckBox
+                                android:id="@+id/platters7"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="CHI FINGER STICKER"
+                                android:textSize="20dp"
+                                android:paddingLeft="10dp"
+                                android:layout_marginTop="12dp"
+
+                                />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="30dp">
+                            <EditText
+                                android:id="@+id/platter_text1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:hint="QTY"
+                                />
+                            <EditText
+                                android:id="@+id/platter_text2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="QTY"/>
+                            <EditText
+                                android:id="@+id/platter_text3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="QTY"/>
+                            <EditText
+                                android:id="@+id/platter_text4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="QTY"/>
+                            <EditText
+                                android:id="@+id/platter_text5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="QTY"/>
+                            <EditText
+                                android:id="@+id/platter_text6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="QTY"/>
+                            <EditText
+                                android:id="@+id/platter_text7"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="QTY"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/combo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:clickable="true"
+                        android:onClick="combo"
+                        android:text="FRENCH FRIES"
+                        android:textSize="30sp"
+
+                        android:layout_marginLeft="80dp"/>
+
+                    <LinearLayout
+                        android:id="@+id/french_fries"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        android:layout_marginTop="10dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginTop="5dp">
+
+                            <CheckBox
+                                android:id="@+id/french_fries1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="LARGE / REGULAR"
+                                android:textSize="20dp"
+                                android:layout_marginTop="10dp"
+
+                                />
+                            <CheckBox
+                                android:id="@+id/french_fries2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="PIRI PIRI"
+                                android:textSize="20dp"
+                                android:layout_marginTop="12dp"
+                                />
+
+                            <CheckBox
+                                android:id="@+id/french_fries3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="CHEESY FRIES"
+                                android:textSize="20dp"
+                                android:layout_marginTop="12dp"
+                                />
+
+                            <CheckBox
+                                android:id="@+id/french_fries4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="JALAPENO FRIES"
+                                android:textSize="20dp"
+                                android:layout_marginTop="12dp"
+                                />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="10dp">
+                            <EditText
+                                android:id="@+id/fries_text1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="QTY"/>
+                            <EditText
+                                android:id="@+id/fries_text2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="QTY"/>
+                            <EditText
+                                android:id="@+id/fries_text3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="QTY"/>
+                            <EditText
+                                android:id="@+id/fries_text4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="QTY"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dessert"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:clickable="true"
+                        android:onClick="dessert"
+                        android:text="MOJITOs"
+                        android:textSize="30sp"
+                        android:layout_marginLeft="80sp"/>
+
+                    <LinearLayout
+                        android:id="@+id/mojitos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginTop="5dp"
+                            >
+
+                            <CheckBox
+                                android:id="@+id/mojitos1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="LIME 'n' MINT"
+                                android:textSize="20dp"
+                                android:layout_marginTop="10dp"
+                                />
+
+                            <CheckBox
+                                android:id="@+id/mojitos2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="BLUE HEAVEN"
+                                android:textSize="20dp"
+                                android:layout_marginTop="12dp"
+                                />
+
+                            <CheckBox
+                                android:id="@+id/mojitos3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="STRAWBERRY BLISS"
+                                android:textSize="20dp"
+                                android:layout_marginTop="12dp"
+                                />
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp">
+                            <EditText
+                                android:id="@+id/mojitos_text1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="QTY"/>
+                            <EditText
+                                android:id="@+id/mojitos_text2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="QTY"/>
+                            <EditText
+                                android:id="@+id/mojitos_text3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="QTY"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/total"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TOTAL=      0"
+
+                    android:layout_marginTop="40dp"
+                    android:textSize="30dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="  order"
+                        android:onClick="total_order"
+
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"/>
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="  Proceed "
+                        android:onClick="bill_order"
+
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

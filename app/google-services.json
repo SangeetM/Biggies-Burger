@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "192392768136",
+    "firebase_url": "https://biggiesburger-6a5dc.firebaseio.com",
+    "project_id": "biggiesburger-6a5dc",
+    "storage_bucket": "biggiesburger-6a5dc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:192392768136:android:f7134ff3a363b864",
+        "android_client_info": {
+          "package_name": "com.example.android.BiggiesBurger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "192392768136-0gvmjunf8tqap5pgg5k4rjrq23bg2kvo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android.BiggiesBurger",
+            "certificate_hash": "FB8D3B90F0442FDCB5EB113D17FF3DA47CF2A36C"
+          }
+        },
+        {
+          "client_id": "192392768136-fieio9arhhfnv7shbsvc8llbc6chdl00.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrymXQxZoqYmXm-ShXt6n-PQixPB5Nbmc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "192392768136-fieio9arhhfnv7shbsvc8llbc6chdl00.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
